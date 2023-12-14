@@ -9,6 +9,7 @@ When review post api is invoked, information related to album review information
 Here is the high level overview of major classes and their relations.
 # Server side
 a)	DatabaseClient: Helps in establishing connection with Amazon dynamodb and to create/update/read the album and review data.
+
 b)	ConnectionHandler: Helps in establishing connection with RabbitMQ server.
 c)	ConnectionPoolHandler: Once ConnectionHandler establishes connection with RabbitMQ server, it helps to create a pool of channels that can be used to publish message on RabbitMQ server. 
 d)	AlbumReview: Helps to track the structure of message written on RabbitMQ queue. It stores the album id and a boolean indicating if it is a like or dislike.
