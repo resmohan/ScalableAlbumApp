@@ -8,7 +8,7 @@ When review post api is invoked, information related to album review information
 
 Here is the high level overview of major classes and their relations.
 # Server side
-a)	DatabaseClient: Helps in establishing connection with Amazon dynamodb and to create/update/read the album and review data.
+a)	[DatabaseClient:](MusicAlbumApp/src/main/java/db/DatabaseClient.java) Helps in establishing connection with Amazon dynamodb and to create/update/read the album and review data.
 
 b)	ConnectionHandler: Helps in establishing connection with RabbitMQ server.
 
